@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contacto</title>
 
   <style>
     a {
-      color: white;
+      color: #e6def5;
       text-decoration: none;
     }
 
@@ -34,6 +34,7 @@
 </head>
 
 <body>
+
   <!-- MENU DE NAVEGACION -->
   <nav style="background-color:#1e1e2e; width:100%; height:70px;">
 
@@ -63,33 +64,67 @@
 
   </nav>
 
-  <main>
+  <!-- CONTACTO -->
+  <section style="width:100%; background-color:#e6def5; padding:40px 0; color:#1e1e2e;">
 
-  </main>
+    <h1 style="text-align:center; color:#5b2d8b;">CONTÁCTANOS</h1>
+    <p style="text-align:center;">
+      ¿Listo para comenzar tu camino como un verdadero guerrero?
+      Escríbenos y da el primer paso.
+    </p>
 
-  <footer style="background-color: #a03300; width:100%; height:240px;">
-    <div>
-      <div style="text-align:center;">
-        <img src="img/pesa.png" alt="logo" style="width:70px;">
-      </div>
-      <nav style="width:100%; height: 20px;">
-        <ul class="nav1" style="text-align: center;">
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="acerca-de.html">ACERCA DE</a></li>
-          <li><a href="servicios.html">SERVICIOS</a></li>
-          <li><a href="galeria.html">GALERIA</a></li>
-          <li><a href="planes.html">PLANES</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+    <div style="width:40%; margin:auto; background-color:#f4f1fb; padding:30px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box;">
+
+      <form>
+
+        <label>Nombre</label><br>
+        <input type="text" placeholder="Tu nombre"
+          style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #5b2d8b;" required><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="correo@ejemplo.com"
+          style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #5b2d8b;" required><br>
+
+        <label>Mensaje</label><br>
+        <textarea placeholder="Escribe tu mensaje"
+          style="width:100%; height:100px; padding:10px; margin-bottom:20px; border:1px solid #5b2d8b;" required></textarea><br>
+
+        <button
+          style="width:100%; padding:12px; background-color:#2f5fb3; color:white; border:none; font-size:16px;">
+          Enviar mensaje
+        </button>
+
+      </form>
+
     </div>
-    <div style="background-color: #CC4100; height: 70px;">
-      <p style="display: inline;">&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
-      <a href="#">Política de Privacidad</a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:#e6def5;">
+
+    <div style="text-align:center;">
+      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    </div>
+
+    <nav style="width:100%; height:20px;">
+      <ul class="nav1" style="text-align:center;">
+        <li><a href="index.html">INICIO</a></li>
+        <li><a href="acerca-de.html">ACERCA DE</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="galeria.html">GALERIA</a></li>
+        <li><a href="planes.html">PLANES</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <div style="background-color:#2f5fb3; height:70px; text-align:center; padding-top:20px;">
+      <p style="margin:0;">&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
+      <a href="#">Política de Privacidad</a> |
       <a href="#">Términos de Servicio</a>
     </div>
+
   </footer>
 
 </body>
-
 </html>
