@@ -5,60 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <style>
-    a {
-      color: #e6def5;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    .nav1 {
-      text-align: right;
-    }
-
-    .nav2 {
-      text-align: left;
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- MENU DE NAVEGACION -->
-  <nav style="background-color:#1e1e2e; width:100%; height:70px;">
+  <nav class="nav-container">
 
-    <div style="width:40%; float:left;">
+    <div class="nav-left">
       <ul class="nav1">
-        <li><a href="index.html"> INICIO </a></li>
-        <li><a> | </a></li>
-        <li><a href="acerca-de.html"> ACERCA DE </a></li>
-        <li><a> | </a></li>
-        <li><a href="servicios.html"> SERVICIOS </a></li>
+        <li><a href="index.html" class="nav-link-light"> INICIO </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="acerca-de.html" class="nav-link-light"> ACERCA DE </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="servicios.html" class="nav-link-light"> SERVICIOS </a></li>
       </ul>
     </div>
 
-    <div style="width:20%; float:left; text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="nav-center">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="width:40%; float:left;">
+    <div class="nav-right">
       <ul class="nav2">
-        <li><a href="galeria.html"> GALERIA </a></li>
-        <li><a> | </a></li>
-        <li><a href="planes.html"> PLANES </a></li>
-        <li><a> | </a></li>
-        <li><a href="contacto.html"> CONTACTO </a></li>
+        <li><a href="galeria.html" class="nav-link-light"> GALERIA </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="planes.html" class="nav-link-light"> PLANES </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="contacto.html" class="nav-link-light"> CONTACTO </a></li>
       </ul>
     </div>
 
@@ -66,21 +41,20 @@
 
   <main>
     <!-- PLANES DEL GIMNASIO -->
-    <section style="background-color:#e6def5; width:100%; padding:50px 0;">
+    <section class="plans-section">
 
-      <h2 style="text-align:center; color:#1e1e2e; margin-bottom:40px;">
+      <h2>
         PLANES DEL TIZNADO
       </h2>
 
       <!-- PLAN DUO -->
-      <article
-        style="width:80%; margin:20px auto; background-color:white; border-left:10px solid #5b2d8b; overflow:hidden;">
+      <article class="plan-card plan-card-duo">
 
-        <div style="width:35%; float:left;">
-          <img src="img/snorlagyranchu.jpeg" style="width:100%; height:100%; object-fit:cover;">
+        <div class="plan-card-image">
+          <img src="img/snorlagyranchu.jpeg" alt="Plan Dúo">
         </div>
 
-        <div style="width:65%; float:left; padding:25px; box-sizing:border-box;">
+        <div class="plan-card-content">
           <h3>Plan Dúo (Olstein & Smog)</h3>
           <p>
             Dos guerreros. Un solo ritmo. Este plan está pensado para entrenar en pareja:
@@ -95,14 +69,13 @@
           <strong>Ideal para:</strong> Tiznados que no entrenan solos.
         </div>
 
-        <div style="clear:both;"></div>
+        <div class="clear"></div>
       </article>
 
       <!-- PLAN EQUIPO -->
-      <article
-        style="width:80%; margin:20px auto; background-color:white; border-left:10px solid #2f5fb3; overflow:hidden;">
+      <article class="plan-card plan-card-team">
 
-        <div style="width:65%; float:left; padding:25px; box-sizing:border-box;">
+        <div class="plan-card-content-left">
           <h3>Plan Equipo (Night Reign)</h3>
           <p>
             Guardian, Duquesa, Waider y la Reclusa representan el poder del trabajo en grupo.
@@ -117,22 +90,21 @@
           <strong>Ideal para:</strong> Equipos que entrenan como hermandad.
         </div>
 
-        <div style="width:35%; float:right;">
-          <img src="img/nigthringh.jpeg" style="width:100%; height:100%; object-fit:cover;">
+        <div class="plan-card-image-right">
+          <img src="img/nigthringh.jpeg" alt="Plan Equipo">
         </div>
 
-        <div style="clear:both;"></div>
+        <div class="clear"></div>
       </article>
 
       <!-- PLAN CHAMPION -->
-      <article
-        style="width:80%; margin:20px auto; background-color:white; border-left:10px solid #1e1e2e; overflow:hidden;">
+      <article class="plan-card plan-card-champion">
 
-        <div style="width:35%; float:left;">
-          <img src="img/rrraargh.jpeg" style="width:100%; height:100%; object-fit:cover;">
+        <div class="plan-card-image">
+          <img src="img/rrraargh.jpeg" alt="Plan Champion">
         </div>
 
-        <div style="width:65%; float:left; padding:25px; box-sizing:border-box;">
+        <div class="plan-card-content">
           <h3>Plan Champion de Olympia (Hoarah Loux)</h3>
           <p>
             Este no es un plan. Es una declaración.
@@ -147,34 +119,34 @@
           <strong>Advertencia:</strong> No apto para corazones débiles.
         </div>
 
-        <div style="clear:both;"></div>
+        <div class="clear"></div>
       </article>
 
     </section>
   </main>
 
   <!-- FOOTER -->
-  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:#e6def5;">
+  <footer>
 
-    <div style="text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="footer-content">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <nav style="width:100%; height:20px;">
-      <ul class="nav1" style="text-align:center;">
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="acerca-de.html">ACERCA DE</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="planes.html">PLANES</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link-footer">INICIO</a></li>
+        <li><a href="acerca-de.html" class="nav-link-footer">ACERCA DE</a></li>
+        <li><a href="servicios.html" class="nav-link-footer">SERVICIOS</a></li>
+        <li><a href="galeria.html" class="nav-link-footer">GALERIA</a></li>
+        <li><a href="planes.html" class="nav-link-footer">PLANES</a></li>
+        <li><a href="contacto.html" class="nav-link-footer">CONTACTO</a></li>
       </ul>
     </nav>
 
-    <div style="background-color:#2f5fb3; height:70px; text-align:center; padding-top:20px;">
-      <p style="margin:0;">&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
-      <a href="#">Política de Privacidad</a> |
-      <a href="#">Términos de Servicio</a>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
+      <a href="#" class="nav-link-footer">Política de Privacidad</a> |
+      <a href="#" class="nav-link-footer">Términos de Servicio</a>
     </div>
 
   </footer>

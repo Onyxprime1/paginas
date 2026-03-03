@@ -5,73 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <style>
-    a {
-      color: white;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    .nav1 {
-      text-align: right;
-    }
-
-    .nav2 {
-      text-align: left;
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- MENU DE NAVEGACION -->
-  <nav style="background-color:#1e1e2e; width:100%; height:70px;">
+  <nav class="nav-container">
 
-    <div style="width:40%; float:left;">
+    <div class="nav-left">
       <ul class="nav1">
-        <li><a href="index.html"> INICIO </a></li>
-        <li><a> | </a></li>
-        <li><a href="acerca-de.html"> ACERCA DE </a></li>
-        <li><a> | </a></li>
-        <li><a href="servicios.html"> SERVICIOS </a></li>
+        <li><a href="index.html" class="nav-link-white"> INICIO </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="acerca-de.html" class="nav-link-white"> ACERCA DE </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="servicios.html" class="nav-link-white"> SERVICIOS </a></li>
       </ul>
     </div>
 
-    <div style="width:20%; float:left; text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="nav-center">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="width:40%; float:left;">
+    <div class="nav-right">
       <ul class="nav2">
-        <li><a href="galeria.html"> GALERIA </a></li>
-        <li><a> | </a></li>
-        <li><a href="planes.html"> PLANES </a></li>
-        <li><a> | </a></li>
-        <li><a href="contacto.html"> CONTACTO </a></li>
+        <li><a href="galeria.html" class="nav-link-white"> GALERIA </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="planes.html" class="nav-link-white"> PLANES </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="contacto.html" class="nav-link-white"> CONTACTO </a></li>
       </ul>
     </div>
 
   </nav>
 
   <!-- MISION / VISION -->
-  <section
-    style="width:100%; height:260px; background-color:#e6def5; color:#1e1e2e; padding:20px; box-sizing:border-box;">
+  <section class="about-section">
 
     <!-- MISION -->
-    <div
-      style="width:48%; float:left; height:220px; background-color:white; border:2px solid #5b2d8b; border-radius:12px; padding:20px; box-sizing:border-box;">
-      <h1 style="margin-top:0; color:#5b2d8b;">Misión</h1>
+    <div class="about-card about-card-left">
+      <h1>Misión</h1>
       <p>
         Forjar cuerpos y voluntad como verdaderos Tiznados en las Tierras Intermedias.
         Cada repetición es una runa ganada, cada gota de sudor un pacto con el hierro.
@@ -80,9 +53,8 @@
     </div>
 
     <!-- VISION -->
-    <div
-      style="width:48%; float:right; height:220px; background-color:white; border:2px solid #5b2d8b; border-radius:12px; padding:20px; box-sizing:border-box;">
-      <h1 style="margin-top:0; color:#5b2d8b;">Visión</h1>
+    <div class="about-card about-card-right">
+      <h1>Visión</h1>
       <p>
         Convertir este gimnasio en una forja legendaria, donde cada alumno pase de NPC
         a Portador del Anillo.
@@ -90,50 +62,51 @@
         prometemos fuerza, disciplina y un cuerpo digno de enfrentar al jefe final… todos los dias.
       </p>
     </div>
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
   </section>
 
   <!-- VALORES -->
-  <section style="width:100%; height:200px; background-color:#5b2d8b; color:white;">
+  <section class="values-section">
 
-    <h1 style="text-align:center;">Valores</h1>
+    <h1>Valores</h1>
 
-    <div style="width:25%; float:left; text-align:center;">
-      <img src="img/casco.png" style="width:100px;">
+    <div class="values-icon">
+      <img src="img/casco.png" alt="Casco">
     </div>
-    <div style="width:25%; float:left; text-align:center;">
-      <img src="img/espada.png" style="width:100px;">
+    <div class="values-icon">
+      <img src="img/espada.png" alt="Espada">
     </div>
-    <div style="width:25%; float:left; text-align:center;">
-      <img src="img/escudo.png" style="width:100px;">
+    <div class="values-icon">
+      <img src="img/escudo.png" alt="Escudo">
     </div>
-    <div style="width:25%; float:left; text-align:center;">
-      <img src="img/castillo.png" style="width:100px;">
+    <div class="values-icon">
+      <img src="img/castillo.png" alt="Castillo">
     </div>
+    <div class="clear"></div>
 
   </section>
 
-  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:white;">
+  <footer>
 
-    <div style="text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="footer-content">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <nav style="width:100%; text-align:center;">
+    <nav class="footer-nav">
       <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="acerca-de.html">ACERCA DE</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="planes.html">PLANES</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="index.html" class="nav-link-footer">INICIO</a></li>
+        <li><a href="acerca-de.html" class="nav-link-footer">ACERCA DE</a></li>
+        <li><a href="servicios.html" class="nav-link-footer">SERVICIOS</a></li>
+        <li><a href="galeria.html" class="nav-link-footer">GALERIA</a></li>
+        <li><a href="planes.html" class="nav-link-footer">PLANES</a></li>
+        <li><a href="contacto.html" class="nav-link-footer">CONTACTO</a></li>
       </ul>
     </nav>
 
-    <div style="background-color:#2f5fb3; height:70px; text-align:center; padding-top:20px;">
+    <div class="footer-bottom">
       <p>&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
-      <a href="#">Política de Privacidad</a> |
-      <a href="#">Términos de Servicio</a>
+      <a href="#" class="nav-link-footer">Política de Privacidad</a> |
+      <a href="#" class="nav-link-footer">Términos de Servicio</a>
     </div>
 
   </footer>

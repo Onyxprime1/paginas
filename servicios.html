@@ -5,79 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servicios</title>
-
-  <style>
-    a {
-      color: #e6def5;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    .nav1 {
-      text-align: right;
-    }
-
-    .nav2 {
-      text-align: left;
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- MENU DE NAVEGACION -->
-  <nav style="background-color:#1e1e2e; width:100%; height:70px;">
+  <nav class="nav-container">
 
-    <div style="width:40%; float:left;">
+    <div class="nav-left">
       <ul class="nav1">
-        <li><a href="index.html"> INICIO </a></li>
-        <li><a> | </a></li>
-        <li><a href="acerca-de.html"> ACERCA DE </a></li>
-        <li><a> | </a></li>
-        <li><a href="servicios.html"> SERVICIOS </a></li>
+        <li><a href="index.html" class="nav-link-light"> INICIO </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="acerca-de.html" class="nav-link-light"> ACERCA DE </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="servicios.html" class="nav-link-light"> SERVICIOS </a></li>
       </ul>
     </div>
 
-    <div style="width:20%; float:left; text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="nav-center">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="width:40%; float:left;">
+    <div class="nav-right">
       <ul class="nav2">
-        <li><a href="galeria.html"> GALERIA </a></li>
-        <li><a> | </a></li>
-        <li><a href="planes.html"> PLANES </a></li>
-        <li><a> | </a></li>
-        <li><a href="contacto.html"> CONTACTO </a></li>
+        <li><a href="galeria.html" class="nav-link-light"> GALERIA </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="planes.html" class="nav-link-light"> PLANES </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="contacto.html" class="nav-link-light"> CONTACTO </a></li>
       </ul>
     </div>
 
   </nav>
 
   <!-- SERVICIOS -->
-<section style="width:100%; background-color:#e6def5; padding:40px; box-sizing:border-box;">
+<section class="services-section">
 
-  <h1 style="text-align:center; color:#1e1e2e; margin-bottom:50px;">
+  <h1>
     Nuestros Servicios
   </h1>
 
   <!-- SERVICIO 1 -->
-  <section style="width:100%; height:260px; margin-bottom:40px; background-color:white; border:2px solid #5b2d8b; border-radius:14px; box-sizing:border-box;">
-    <div style="width:35%; float:left; height:260px; padding:20px; box-sizing:border-box;">
-      <img src="img/nah i'd win.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+  <section class="service-card">
+    <div class="service-card-image">
+      <img src="img/nah i'd win.jpeg" alt="Nah, I'd Win Training">
     </div>
-    <div style="width:65%; float:left; padding:30px; box-sizing:border-box;">
-      <h2 style="color:#5b2d8b;">Nah, I'd Win</h2>
+    <div class="service-card-content">
+      <h2>Nah, I'd Win</h2>
       <p>
         Este no es un entrenamiento para indecisos.
         Aquí forjamos mentalidad de victoria absoluta.
@@ -85,17 +60,17 @@
         y en tu capacidad de levantarte incluso cuando el cuerpo duda.
       </p>
       <p>
-        En este camino no existe el “tal vez”.
+        En este camino no existe el "tal vez".
         Existe el combate… y existe la victoria.
       </p>
     </div>
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
   </section>
 
   <!-- SERVICIO 2 -->
-  <section style="width:100%; height:260px; margin-bottom:40px; background-color:white; border:2px solid #5b2d8b; border-radius:14px; box-sizing:border-box;">
-    <div style="width:65%; float:left; padding:30px; box-sizing:border-box;">
-      <h2 style="color:#5b2d8b;">120%</h2>
+  <section class="service-card">
+    <div class="service-card-content-left">
+      <h2>120%</h2>
       <p>
         Entrenar al 100% no es suficiente.
         Aquí llevamos el cuerpo y la mente más allá de su límite conocido.
@@ -107,19 +82,19 @@
         El cansancio no es una señal de parar, es una señal de avance.
       </p>
     </div>
-    <div style="width:35%; float:right; height:260px; padding:20px; box-sizing:border-box;">
-      <img src="img/120.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+    <div class="service-card-image-right">
+      <img src="img/120.jpeg" alt="120% Training">
     </div>
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
   </section>
 
   <!-- SERVICIO 3 -->
-  <section style="width:100%; height:260px; margin-bottom:40px; background-color:white; border:2px solid #5b2d8b; border-radius:14px; box-sizing:border-box;">
-    <div style="width:35%; float:left; height:260px; padding:20px; box-sizing:border-box;">
-      <img src="img/havelaprove.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+  <section class="service-card">
+    <div class="service-card-image">
+      <img src="img/havelaprove.jpeg" alt="Havel Approves Training">
     </div>
-    <div style="width:65%; float:left; padding:30px; box-sizing:border-box;">
-      <h2 style="color:#5b2d8b;">Havel Approves</h2>
+    <div class="service-card-content">
+      <h2>Havel Approves</h2>
       <p>
         Fuerza real. Peso real. Disciplina absoluta.
         Este servicio está enfocado en construir una base sólida
@@ -131,13 +106,13 @@
         y tu fuerza ya no es solo física, es carácter.
       </p>
     </div>
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
   </section>
 
   <!-- SERVICIO 4 -->
-  <section style="width:100%; height:260px; background-color:white; border:2px solid #5b2d8b; border-radius:14px; box-sizing:border-box;">
-    <div style="width:65%; float:left; padding:30px; box-sizing:border-box;">
-      <h2 style="color:#5b2d8b;">JoJo Reference</h2>
+  <section class="service-card">
+    <div class="service-card-content-left">
+      <h2>JoJo Reference</h2>
       <p>
         El cuerpo no solo se entrena, se presenta.
         Postura, control, estabilidad y presencia.
@@ -149,36 +124,36 @@
         disciplina, poder y confianza total.
       </p>
     </div>
-    <div style="width:35%; float:right; height:260px; padding:20px; box-sizing:border-box;">
-      <img src="img/jojoreference.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+    <div class="service-card-image-right">
+      <img src="img/jojoreference.jpeg" alt="JoJo Reference Training">
     </div>
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
   </section>
 
 </section>
 
   <!-- FOOTER -->
-  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:#e6def5;">
+  <footer>
 
-    <div style="text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="footer-content">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <nav style="width:100%; height:20px;">
+    <nav class="footer-nav">
       <ul class="nav1" style="text-align:center;">
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="acerca-de.html">ACERCA DE</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="planes.html">PLANES</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+        <li><a href="index.html" class="nav-link-footer">INICIO</a></li>
+        <li><a href="acerca-de.html" class="nav-link-footer">ACERCA DE</a></li>
+        <li><a href="servicios.html" class="nav-link-footer">SERVICIOS</a></li>
+        <li><a href="galeria.html" class="nav-link-footer">GALERIA</a></li>
+        <li><a href="planes.html" class="nav-link-footer">PLANES</a></li>
+        <li><a href="contacto.html" class="nav-link-footer">CONTACTO</a></li>
       </ul>
     </nav>
 
-    <div style="background-color:#2f5fb3; height:70px; text-align:center; padding-top:20px;">
-      <p style="margin:0;">&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
-      <a href="#">Política de Privacidad</a> |
-      <a href="#">Términos de Servicio</a>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
+      <a href="#" class="nav-link-footer">Política de Privacidad</a> |
+      <a href="#" class="nav-link-footer">Términos de Servicio</a>
     </div>
 
   </footer>

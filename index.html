@@ -5,109 +5,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
-
-  <style>
-    a {
-      color: white;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      margin: 0;
-    }
-
-    .nav1 {
-      text-align: right;
-    }
-
-    .nav2 {
-      text-align: left;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- MENU DE NAVEGACION -->
-  <nav style="background-color:#1e1e2e; width:100%; height:70px;">
+  <nav class="nav-container">
 
-    <div style="width:40%; float:left;">
+    <div class="nav-left">
       <ul class="nav1">
-        <li><a href="index.html"> INICIO </a></li>
-        <li><a> | </a></li>
-        <li><a href="acerca-de.html"> ACERCA DE </a></li>
-        <li><a> | </a></li>
-        <li><a href="servicios.html"> SERVICIOS </a></li>
+        <li><a href="index.html" class="nav-link-white"> INICIO </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="acerca-de.html" class="nav-link-white"> ACERCA DE </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="servicios.html" class="nav-link-white"> SERVICIOS </a></li>
       </ul>
     </div>
 
-    <div style="width:20%; float:left; text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="nav-center">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="width:40%; float:left;">
+    <div class="nav-right">
       <ul class="nav2">
-        <li><a href="galeria.html"> GALERIA </a></li>
-        <li><a> | </a></li>
-        <li><a href="planes.html"> PLANES </a></li>
-        <li><a> | </a></li>
-        <li><a href="contacto.html"> CONTACTO </a></li>
+        <li><a href="galeria.html" class="nav-link-white"> GALERIA </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="planes.html" class="nav-link-white"> PLANES </a></li>
+        <li><a class="nav-link-white"> | </a></li>
+        <li><a href="contacto.html" class="nav-link-white"> CONTACTO </a></li>
       </ul>
     </div>
 
   </nav>
 
   <!-- BANNER -->
-  <header style="background-color:#5b2d8b; width:100%; height:300px; overflow:hidden;">
+  <header class="header">
 
     <!-- TEXTO -->
-    <div style="width:50%; height:300px; float:right; color:white; padding:30px; box-sizing:border-box;">
-      <h1 style="margin:0 0 10px 0;">
+    <div class="header-text">
+      <h1>
         PRAISE THE GYM ☀️
       </h1>
-      <p style="margin:0 0 20px 0; line-height:1.5;">
+      <p>
         Si tan solo pudiera ser tan fuerte…<br>
         Solaire no busca excusas, busca repeticiones.
         Aquí se levanta hierro como si fuera el sol mismo.
         No es motivación, es fe absoluta en el proceso.
       </p>
       <form>
-        <input type="text" placeholder="Únete al culto del hierro" required
-          style="width:70%; padding:8px; border:none;">
-        <button style="padding:9px 15px; background-color:#2f5fb3; color:white; border:none;">
+        <input type="text" placeholder="Únete al culto del hierro" required class="header-input">
+        <button class="header-button">
           Alabar el sol
         </button>
       </form>
     </div>
 
     <!-- IMAGEN -->
-    <div style="width:50%; height:300px; float:left; overflow:hidden;">
-      <img src="img/solarierelampago.jpeg" alt="Solaire con escudo y relámpago"
-        style="width:100%; height:100%; object-fit:cover;">
+    <div class="header-image">
+      <img src="img/solarierelampago.jpeg" alt="Solaire con escudo y relámpago">
     </div>
 
-    <div style="clear:both;"></div>
+    <div class="clear"></div>
 
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <main style="width:100%; height:auto; background-color:#e6def5;">
+  <main>
 
     <!-- MEJORES FOTOGRAFIAS -->
-    <section style="background-color:#e6def5; width:100%; height:620px;">
+    <section class="photo-section">
 
-      <h2 style="text-align:center; color:#1e1e2e;">
+      <h2>
         CRÓNICAS DE UN GIMNASIO LEGENDARIO
       </h2>
 
-      <div style="width:31%; float:left; padding:1%;">
-        <img src="img/youarefinalbos.jpeg" style="width:100%;">
+      <div class="photo-card">
+        <img src="img/youarefinalbos.jpeg" alt="Tiznado Final Boss">
         <h3>El Jefe Final (otra vez)</h3>
         <p>
           El Tiznado avanza con Ranni a la espalda,
@@ -117,8 +91,8 @@
         </p>
       </div>
 
-      <div style="width:31%; float:left; padding:1%;">
-        <img src="img/estuds.jpeg" style="width:100%;">
+      <div class="photo-card">
+        <img src="img/estuds.jpeg" alt="Recuperación Estratégica">
         <h3>Recuperación Estratégica</h3>
         <p>
           Beber Estus no es rendirse,
@@ -128,8 +102,8 @@
         </p>
       </div>
 
-      <div style="width:31%; float:left; padding:1%;">
-        <img src="img/picachuvstauro.jpeg" style="width:100%;">
+      <div class="photo-card">
+        <img src="img/picachuvstauro.jpeg" alt="Pikachu vs Tauros">
         <h3>Cuando el Meta no Importa</h3>
         <p>
           Pikachu peleando contra Tauros
@@ -143,18 +117,17 @@
     </section>
 
     <!-- TESTIMONIOS -->
-    <section style="background-color:#1e1e2e; width:100%; padding:40px 0; color:white;">
+    <section class="testimonial-section">
 
-      <h2 style="text-align:center;">
+      <h2>
         MENSAJES DEL SUELO
       </h2>
 
-      <div style="width:90%; margin:auto;">
+      <div class="testimonial-container">
 
         <!-- TESTIMONIO 1 -->
-        <div
-          style="width:50%; float:left; background-color:#5b2d8b; text-align:center; padding:20px; box-sizing:border-box;">
-          <img src="img/caballero.png" style="width:70px;"><br>
+        <div class="testimonial-card">
+          <img src="img/caballero.png" alt="Caballero"><br>
           <p>
             “Pensé en rendirme después del tercer set.
             Luego recordé que soy un Tiznado.
@@ -164,110 +137,103 @@
         </div>
 
         <!-- TESTIMONIO 2 -->
-        <div
-          style="width:50%; float:left; background-color:#5b2d8b; text-align:center; padding:20px; box-sizing:border-box;">
-          <img src="img/caballero.png" style="width:70px;"><br>
+        <div class="testimonial-card">
+          <img src="img/caballero.png" alt="Caballero"><br>
           <p>
-            “El hierro no tuvo piedad.
+            "El hierro no tuvo piedad.
             Mis piernas tampoco.
             Pero el jefe final cayó…
-            (era yo mismo frente al espejo).”
+            (era yo mismo frente al espejo)."
           </p>
           <h4>— Tiznado sin Estus</h4>
         </div>
 
-        <div style="clear:both;"></div>
+        <div class="clear"></div>
       </div>
 
-      </section>
+    </section>
 
       <!-- SERVICIOS DEL GYM -->
-      <section style="background-color:#2f5fb3; width:100%; padding:40px 0;">
+      <section class="services-home-section">
 
-        <h2 style="text-align:center; color:white;">
+        <h2>
           LO QUE OFRECE EL GIMNASIO
         </h2>
 
-        <table width="80%" align="center" cellpadding="10" cellspacing="0" bgcolor="#e6def5">
-          <tr bgcolor="#1e1e2e">
-            <th>
-              <font color="white">Servicio</font>
-            </th>
-            <th>
-              <font color="white">Horario</font>
-            </th>
-            <th>
-              <font color="white">Descripción</font>
-            </th>
-            <th>
-              <font color="white">Estado</font>
-            </th>
-          </tr>
+        <table class="services-table">
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Horario</th>
+              <th>Descripción</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Forja del Tiznado</td>
+              <td>05:00 - 22:00</td>
+              <td>Zona de pesas para templar cuerpo y espíritu</td>
+              <td>🔥 Activo</td>
+            </tr>
 
-          <tr>
-            <td>Forja del Tiznado</td>
-            <td>05:00 - 22:00</td>
-            <td>Zona de pesas para templar cuerpo y espíritu</td>
-            <td>🔥 Activo</td>
-          </tr>
+            <tr>
+              <td>Rito de la Resistencia</td>
+              <td>06:00 - 10:00</td>
+              <td>Entrenamiento funcional y cardio intenso</td>
+              <td>⚡ Disponible</td>
+            </tr>
 
-          <tr>
-            <td>Rito de la Resistencia</td>
-            <td>06:00 - 10:00</td>
-            <td>Entrenamiento funcional y cardio intenso</td>
-            <td>⚡ Disponible</td>
-          </tr>
+            <tr>
+              <td>Cámara de los Espejos</td>
+              <td>Todo el día</td>
+              <td>Área de progreso visual (sí, aquí se sacan fotos)</td>
+              <td>📸 Permitido</td>
+            </tr>
 
-          <tr>
-            <td>Cámara de los Espejos</td>
-            <td>Todo el día</td>
-            <td>Área de progreso visual (sí, aquí se sacan fotos)</td>
-            <td>📸 Permitido</td>
-          </tr>
+            <tr>
+              <td>Día de Pierna</td>
+              <td>Lunes y Jueves</td>
+              <td>Sesión legendaria. Dolor garantizado.</td>
+              <td>💀 Obligatorio</td>
+            </tr>
 
-          <tr>
-            <td>Día de Pierna</td>
-            <td>Lunes y Jueves</td>
-            <td>Sesión legendaria. Dolor garantizado.</td>
-            <td>💀 Obligatorio</td>
-          </tr>
-
-          <tr>
-            <td>Asesoría del Maestro</td>
-            <td>Con cita</td>
-            <td>Guía para no entrenar como NPC</td>
-            <td>🧠 Disponible</td>
-          </tr>
+            <tr>
+              <td>Asesoría del Maestro</td>
+              <td>Con cita</td>
+              <td>Guía para no entrenar como NPC</td>
+              <td>🧠 Disponible</td>
+            </tr>
+          </tbody>
         </table>
 
       </section>
-  </main>
+
+    </main>
 
   <!-- FOOTER -->
-  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:white;">
-    <div>
-      <div style="text-align:center;">
-        <img src="img/pesa.png" alt="logo" style="width:70px;">
-      </div>
-      <nav style="width:100%; height: 20px;">
-        <ul class="nav1" style="text-align: center;">
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="acerca-de.html">ACERCA DE</a></li>
-          <li><a href="servicios.html">SERVICIOS</a></li>
-          <li><a href="galeria.html">GALERIA</a></li>
-          <li><a href="planes.html">PLANES</a></li>
-          <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-      </nav>
+  <footer>
+    <div class="footer-content">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="background-color:#5b2d8b; height:70px; text-align:center;">
-      <p style="display:inline;">&copy; 2026 Gimnasio Fuerza Total.</p>
-      &nbsp;&nbsp;
-      <a href="#">Política de Privacidad</a>
-      &nbsp;&nbsp;
-      <a href="#">Términos de Servicio</a>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link-footer">INICIO</a></li>
+        <li><a href="acerca-de.html" class="nav-link-footer">ACERCA DE</a></li>
+        <li><a href="servicios.html" class="nav-link-footer">SERVICIOS</a></li>
+        <li><a href="galeria.html" class="nav-link-footer">GALERIA</a></li>
+        <li><a href="planes.html" class="nav-link-footer">PLANES</a></li>
+        <li><a href="contacto.html" class="nav-link-footer">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
+      <a href="#" class="nav-link-footer">Política de Privacidad</a> |
+      <a href="#" class="nav-link-footer">Términos de Servicio</a>
     </div>
+
   </footer>
 
 </body>

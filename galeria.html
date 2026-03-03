@@ -5,60 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <style>
-    a {
-      color: #e6def5;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      display: inline;
-      margin: 0 10px;
-    }
-
-    .nav1 {
-      text-align: right;
-    }
-
-    .nav2 {
-      text-align: left;
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- MENU DE NAVEGACION -->
-  <nav style="background-color:#1e1e2e; width:100%; height:70px;">
+  <nav class="nav-container">
 
-    <div style="width:40%; float:left;">
+    <div class="nav-left">
       <ul class="nav1">
-        <li><a href="index.html"> INICIO </a></li>
-        <li><a> | </a></li>
-        <li><a href="acerca-de.html"> ACERCA DE </a></li>
-        <li><a> | </a></li>
-        <li><a href="servicios.html"> SERVICIOS </a></li>
+        <li><a href="index.html" class="nav-link-light"> INICIO </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="acerca-de.html" class="nav-link-light"> ACERCA DE </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="servicios.html" class="nav-link-light"> SERVICIOS </a></li>
       </ul>
     </div>
 
-    <div style="width:20%; float:left; text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+    <div class="nav-center">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <div style="width:40%; float:left;">
+    <div class="nav-right">
       <ul class="nav2">
-        <li><a href="galeria.html"> GALERIA </a></li>
-        <li><a> | </a></li>
-        <li><a href="planes.html"> PLANES </a></li>
-        <li><a> | </a></li>
-        <li><a href="contacto.html"> CONTACTO </a></li>
+        <li><a href="galeria.html" class="nav-link-light"> GALERIA </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="planes.html" class="nav-link-light"> PLANES </a></li>
+        <li><a class="nav-link-light"> | </a></li>
+        <li><a href="contacto.html" class="nav-link-light"> CONTACTO </a></li>
       </ul>
     </div>
 
@@ -66,91 +41,84 @@
 
   <main>
   <!-- GALERIA -->
-  <section style="width:100%; background-color:#e6def5; padding:40px; box-sizing:border-box;">
+  <section class="gallery-section">
 
-    <h1 style="text-align:center; color:#1e1e2e; margin-bottom:30px;">
+    <h1>
       Galería
     </h1>
 
     <!-- CONTENEDOR -->
-    <section style="width:90%; margin:auto;">
+    <section class="gallery-container">
 
       <!-- IMAGEN 1 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin:0 1% 20px 0;">
-        <img src="img/nah i'd win.jpeg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/nah i'd win.jpeg" alt="Nah, I'd Win">
       </section>
 
       <!-- IMAGEN 2 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin:0 1% 20px 0;">
-        <img src="img/120.jpeg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/120.jpeg" alt="120% Training">
       </section>
 
       <!-- IMAGEN 3 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin-bottom:20px;">
-        <img src="img/havelaprove.jpeg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/havelaprove.jpeg" alt="Havel Approves">
       </section>
 
       <!-- IMAGEN 4 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin:0 1% 20px 0;">
-        <img src="img/jojoreference.jpeg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/jojoreference.jpeg" alt="JoJo Reference">
       </section>
 
       <!-- IMAGEN 5 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin:0 1% 20px 0;">
-        <img src="img/mejor-foto1.jpg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/mejor-foto1.jpg" alt="Gym Photo 1">
       </section>
 
       <!-- IMAGEN 6 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin-bottom:20px;">
-        <img src="img/mejor-foto2.png"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/mejor-foto2.png" alt="Gym Photo 2">
       </section>
 
       <!-- IMAGEN 7 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box; margin:0 1% 20px 0;">
-        <img src="img/mejor-foto3.jpg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/mejor-foto3.jpg" alt="Gym Photo 3">
       </section>
 
       <!-- IMAGEN 8 -->
-      <section style="width:32%; float:left; background-color:white; padding:8px; border-radius:12px; border:2px solid #5b2d8b; box-sizing:border-box;">
-        <img src="img/foto-banner.jpg"
-          style="width:100%; height:220px; object-fit:cover; border-radius:8px;">
+      <section class="gallery-item">
+        <img src="img/foto-banner.jpg" alt="Gym Banner">
       </section>
 
-      <div style="clear:both;"></div>
+      <div class="clear"></div>
 
     </section>
 
   </section>
-</main>
-  <!-- FOOTER -->
-  <footer style="background-color:#1e1e2e; width:100%; height:240px; color:#e6def5;">
+  </main>
 
-    <div style="text-align:center;">
-      <img src="img/pesa.png" alt="logo" style="width:70px;">
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+      <img src="img/pesa.png" alt="logo" class="logo">
     </div>
 
-    <nav style="width:100%; height:20px;">
-      <ul class="nav1" style="text-align:center;">
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="acerca-de.html">ACERCA DE</a></li>
-        <li><a href="servicios.html">SERVICIOS</a></li>
-        <li><a href="galeria.html">GALERIA</a></li>
-        <li><a href="planes.html">PLANES</a></li>
-        <li><a href="contacto.html">CONTACTO</a></li>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link-footer">INICIO</a></li>
+        <li><a href="acerca-de.html" class="nav-link-footer">ACERCA DE</a></li>
+        <li><a href="servicios.html" class="nav-link-footer">SERVICIOS</a></li>
+        <li><a href="galeria.html" class="nav-link-footer">GALERIA</a></li>
+        <li><a href="planes.html" class="nav-link-footer">PLANES</a></li>
+        <li><a href="contacto.html" class="nav-link-footer">CONTACTO</a></li>
       </ul>
     </nav>
 
-    <div style="background-color:#2f5fb3; height:70px; text-align:center; padding-top:20px;">
-      <p style="margin:0;">&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
-      <a href="#">Política de Privacidad</a> |
-      <a href="#">Términos de Servicio</a>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gimnasio Fuerza Total. Todos los derechos reservados.</p>
+      <a href="#" class="nav-link-footer">Política de Privacidad</a> |
+      <a href="#" class="nav-link-footer">Términos de Servicio</a>
     </div>
 
   </footer>
